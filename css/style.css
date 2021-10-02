@@ -75,18 +75,20 @@ button {
   color: #FFFFFF;
 }
 
-.information-title {
+.information-title, .quote-section {
   font-size: 36px;
-  font-weight: extra-bold;
   color: #1F2937;
+}
+
+.information-title {
+  font-weight: extra-bold;
   padding-bottom: 25px;
 }
 
 .information-cards {
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
   gap: 25px;
 }
 
@@ -104,6 +106,23 @@ button {
   width: 100%;
   border: 2px solid #3882F6;
   border-radius: 8px;
+}
+
+.quote-section {
+  justify-content: flex-end;
+  align-items: center;
+  font-style: italic;
+  background: #E5E7EB;
+}
+
+.quote-text {
+  max-width: 750px;
+}
+
+.quoted-by {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 :root {
