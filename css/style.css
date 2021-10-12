@@ -67,12 +67,40 @@ img {
   background: #1F2937;
 }
 
-button {
-  padding: 8px 25px;
+.signup-section, button {
   background: #3882F6;
+}
+
+.signup-section {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  border-radius: 8px;
+  color: white;
+}
+
+.signup-section label {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.signup-button {
+  padding: 5px 15px;
+  border: 2px solid white;
+}
+
+button {
+  margin: 10px 0;
+  padding: 8px 25px;
   border-radius: 8px;
   border-style: none;
   color: #FFFFFF;
+}
+
+button:hover {
+  background: #2410F6;
+  color: #00FFAA;
 }
 
 .information-title, .quote-section {
