@@ -16,7 +16,7 @@ body {
 }
 
 .header, .footer {
-  padding: var(--header-footer-padding);
+  padding: var(--side-padding);
 }
 
 .header {
@@ -84,6 +84,7 @@ img {
   flex: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 30px 60px;
   border-radius: 8px;
   color: white;
@@ -105,10 +106,14 @@ button {
   border-radius: 8px;
   border-style: none;
   color: #FFFFFF;
+  min-width: 100px;
+}
+
+button:hover, a:hover {
+  color: #00FFAA;
 }
 
 button:hover {
-  background: #2410F6;
   color: #00FFAA;
 }
 
@@ -162,7 +167,22 @@ button:hover {
   font-style: normal;
 }
 
+.about {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 25%;
+  min-height: 100vh;
+  color: #FFFFFF;
+}
+
+.about > address {
+  font-size: 1.5rem;
+}
+
 :root {
   --container-padding: 50px 17% 50px 17%;
-  --header-footer-padding: 16px 17%;
+  --side-padding: 16px 17%;
 }
