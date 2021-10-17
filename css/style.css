@@ -7,12 +7,53 @@ body {
   flex-flow: column nowrap;
 }
 
-.flex-column {
-  flex-direction: column;
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.container, .flex-container, .footer {
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.container, .flex-container, .footer, .signup-form {
   padding: var(--container-padding);
+}
+
+@media only screen and (max-width: 1070px) {
+  .music-lesson-signup {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .link-section {
+    flex-flow: column wrap;
+    gap: 2px !important;
+  }
+}
+
+.signup-form {
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.signup-form input{
+  border-radius: 5px;
+}
+
+.signup-form input:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.signup-form-info {
+  max-width: 400px;
+}
+
+.customer-info {
+  margin-bottom: 15px;
 }
 
 .header, .footer {
@@ -20,7 +61,7 @@ body {
 }
 
 .header {
-  background: #0045AA;
+  background: #2599FF;
 }
 
 .flex-container {
@@ -76,7 +117,7 @@ img {
   background: #1F2937;
 }
 
-.signup-section, button {
+.signup-section, button, input[type=Submit] {
   background: #3882F6;
 }
 
@@ -97,24 +138,25 @@ img {
 
 .signup-button {
   padding: 5px 15px;
-  border: 2px solid white;
+  border: 2px solid white !important;
 }
 
-button {
+button, input[type=Submit] {
   margin: 10px 0;
   padding: 8px 25px;
   border-radius: 8px;
   border-style: none;
   color: #FFFFFF;
   min-width: 100px;
+  max-width: 200px;
 }
 
-button:hover, a:hover {
+button:hover, input[type=Submit]:hover, a:hover {
   color: #00FFAA;
 }
 
-button:hover {
-  color: #00FFAA;
+button:hover, input[type=Submit]:hover {
+  background: #3882FF;
 }
 
 .information-title, .quote-section {
@@ -167,7 +209,7 @@ button:hover {
   font-style: normal;
 }
 
-.about {
+.about, .contact-info {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -176,9 +218,6 @@ button:hover {
   padding: 0 25%;
   min-height: 100vh;
   color: #FFFFFF;
-}
-
-.about > address {
   font-size: 1.5rem;
 }
 

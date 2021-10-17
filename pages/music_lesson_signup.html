@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="utf-8">
+    <title>Music Lesson Registration ~ Custom Guitars Inc.</title>
+  </head>
+  <body>
+    <div class="header flex-container">
+      <div class="logo">
+        <img src="../images/logo.png" alt="Acoutsic guitar" />
+        Custom Guitars Inc.
+      </div>
+      <ul class="link-section">
+        <li><a href="../index.html" >Home</a></li>
+      </ul>
+    </div>
+    <form class="" action="../index.html" method="post">
+      <div class="signup-form flex-column dark-background">
+        <div class="signup-form-info flex-column">
+          <h1>Music Lesson Registration</h1>            <div class="customer-info flex-column">              <input required type="email" name="email" placeholder="Email Address">
+            <input required type="text" name="fname" placeholder="First Name">
+            <input required type="text" name="lname" placeholder="Last Name">
+            <input required type="text" name="phone" placeholder="Phone Number">
+          </div>
+          <div class="flex-row">
+            <div class="flex-column">
+              <label>
+                <input type="radio" name="lesson_type" value="Piano" checked>
+                Piano
+              </label>
+              <label>
+                <input type="radio" name="lesson_type" value="Guitar">
+                Guitar
+              </label>
+              <label>
+                <input type="radio" name="lesson_type" value="Bass">
+                Bass
+              </label>
+            </div>
+            <div class="flex-column">
+              <label>
+                <input type="radio" name="lesson_type" value="Drums">
+                Drums
+              </label>
+              <label>
+                <input type="radio" name="lesson_type" value="Sax">
+                Saxaphone
+              </label>
+              <label>
+                <input type="radio" name="lesson_type" value="Clarinet">
+                Clarinet
+              </label>
+            </div>
+            <div class="flex-column">
+              <label>
+                <input type="radio" name="lesson_type" value="Oboe">
+                Oboe
+              </label>
+              <label>
+                <input type="radio" name="lesson_type" value="Trumpet">
+                Trumpet
+              </label>
+              <label>
+                <input type="radio" name="lesson_type" value="Flute">
+                Flute
+              </label>
+            </div>
+          </div>
+          <input type="submit" name="submit" value="Submit">
+          <p>* A confirmation email will be sent to the email provided with all the information about your purchase.</p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
